@@ -13,8 +13,8 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 
 Maintainer: Miguel Luis, Matthieu Verdy and Benjamin Boulet
 */
-#ifndef __SX1280_HAL-H__
-#define __SX1280_HAL-H__
+#ifndef __SX1280_HAL_H__
+#define __SX1280_HAL_H__
 
 #ifdef __cplusplus
 extern "C" {

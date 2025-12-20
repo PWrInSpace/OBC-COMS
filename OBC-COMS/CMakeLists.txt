@@ -48,12 +48,16 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    app/src/app_main.c
+    app/src/rfm95w_task.c
+    app/src/sd_task.c
+    app/src/startup_task.c
+    app/src/sx1280_task.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined include paths
+    app/inc
 )
 
 # Add project symbols (macros)

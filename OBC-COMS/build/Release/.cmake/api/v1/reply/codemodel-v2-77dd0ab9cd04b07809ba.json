@@ -132,7 +132,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OBC-COMS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OBC-COMS-Release-d65a78c79b6c32227910.json",
+					"jsonFile" : "target-OBC-COMS-Release-a71638c4c83010e5f35c.json",
 					"name" : "OBC-COMS",
 					"projectIndex" : 0
 				},
@@ -167,7 +167,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "sx128x::@ae689df6c50dc73a7b49",
-					"jsonFile" : "target-sx128x-Release-484f092e473c0ca42a77.json",
+					"jsonFile" : "target-sx128x-Release-a9a65e3f755e8f8f8522.json",
 					"name" : "sx128x",
 					"projectIndex" : 0
 				}
