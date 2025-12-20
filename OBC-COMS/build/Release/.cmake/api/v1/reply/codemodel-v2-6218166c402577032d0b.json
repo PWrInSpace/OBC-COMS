@@ -38,7 +38,8 @@
 					"source" : "cmake/stm32cubemx",
 					"targetIndexes" : 
 					[
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -53,7 +54,7 @@
 					"source" : "modules/sx1280",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -68,7 +69,7 @@
 					"source" : "modules/rfm95w",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -83,7 +84,7 @@
 					"source" : "modules/max2201",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -98,7 +99,7 @@
 					"source" : "modules/sd_card",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				}
 			],
@@ -123,7 +124,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -132,42 +134,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OBC-COMS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OBC-COMS-Release-a71638c4c83010e5f35c.json",
+					"jsonFile" : "target-OBC-COMS-Release-7f166ed9cc897215e357.json",
 					"name" : "OBC-COMS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
+					"id" : "RTOS2::@768a070a0fe75716b479",
+					"jsonFile" : "target-RTOS2-Release-b2ae5bba90c7afb13d40.json",
+					"name" : "RTOS2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Release-ca9b56481456b214bc83.json",
+					"jsonFile" : "target-STM32_Drivers-Release-a6b2cbaed467ba1248d8.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "max2201_Lib::@21b4995696229adab4d2",
-					"jsonFile" : "target-max2201_Lib-Release-0659c4576be858473d92.json",
+					"jsonFile" : "target-max2201_Lib-Release-51050bef697301a87ed0.json",
 					"name" : "max2201_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "rfm95w_Lib::@e7d4ff35c4c6f3d369a5",
-					"jsonFile" : "target-rfm95w_Lib-Release-67de1cbbffc6bcfcd3ef.json",
+					"jsonFile" : "target-rfm95w_Lib-Release-26d3bd7c2ee1bf461293.json",
 					"name" : "rfm95w_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "sd_card_Lib::@5ce835182d7479cf356d",
-					"jsonFile" : "target-sd_card_Lib-Release-5998e7f764a24425437c.json",
+					"jsonFile" : "target-sd_card_Lib-Release-42cc78d087bde2f123a9.json",
 					"name" : "sd_card_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "sx128x::@ae689df6c50dc73a7b49",
-					"jsonFile" : "target-sx128x-Release-a9a65e3f755e8f8f8522.json",
+					"jsonFile" : "target-sx128x-Release-bd4e1c5b8d389462080b.json",
 					"name" : "sx128x",
 					"projectIndex" : 0
 				}

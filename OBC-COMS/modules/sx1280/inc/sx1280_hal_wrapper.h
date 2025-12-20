@@ -13,8 +13,20 @@ typedef struct {
 // The main device handle
 typedef struct {
     sx1280_hw_t hw;
-    // Add internal radio states here (e.g., current frequency)
-} sx1280_t;
+    uint32_t frequency;
+    uint8_t  tx_power;
+    uint8_t  spreading_factor;
+    uint8_t  bandwidth;      
+    
+    //Link Qual
+    int8_t   last_rssi;
+    int8_t   last_snr;
+    uint32_t packet_count_rx;
+    uint32_t packet_count_tx;
+    uint32_t crc_error_count;
 
-// Function to link STM32 HAL to the driver
-void sx1280_port_init(sx1280_t *dev);
+    volatile RadioStates_t state;
+    bool     is_initialized;
+    
+    uint32_t last_irq_timestamp;
+} sx1280_t;

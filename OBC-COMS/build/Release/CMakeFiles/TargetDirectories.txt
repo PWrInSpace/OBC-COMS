@@ -2,6 +2,7 @@ C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/CMakeFiles/OBC-COMS
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/CMakeFiles/edit_cache.dir
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/CMakeFiles/rebuild_cache.dir
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/cmake/stm32cubemx/CMakeFiles/RTOS2.dir
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
 C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/modules/sx1280/CMakeFiles/sx128x.dir

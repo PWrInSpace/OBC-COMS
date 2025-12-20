@@ -69,6 +69,8 @@ void HAL_MspInit(void)
   PWREx_AVDTypeDef sConfigAVD = {0};
 
   /* System interrupt init*/
+  /* PendSV_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(PendSV_IRQn, 15, 0);
 
   /** AVD Configuration
   */

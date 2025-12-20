@@ -37,9 +37,9 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 add_subdirectory(modules/sx1280)
-add_subdirectory(Modules/rfm95w)
-add_subdirectory(Modules/max2201)
-add_subdirectory(Modules/sd_card)
+add_subdirectory(modules/rfm95w)
+add_subdirectory(modules/max2201)
+add_subdirectory(modules/sd_card)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
