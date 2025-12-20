@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "modules/rfm95w/librfm95w_Lib.a"
+			"path" : "modules/max2201/libmax2201_Lib.a"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"modules/rfm95w/CMakeLists.txt"
+			"modules/max2201/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,19 +27,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -72,7 +72,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc"
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/src"
 				},
 				{
 					"backtrace" : 2,
@@ -115,13 +119,13 @@
 			]
 		}
 	],
-	"id" : "rfm95w_Lib::@e7d4ff35c4c6f3d369a5",
-	"name" : "rfm95w_Lib",
-	"nameOnDisk" : "librfm95w_Lib.a",
+	"id" : "max2201_Lib::@21b4995696229adab4d2",
+	"name" : "max2201_Lib",
+	"nameOnDisk" : "libmax2201_Lib.a",
 	"paths" : 
 	{
-		"build" : "modules/rfm95w",
-		"source" : "modules/rfm95w"
+		"build" : "modules/max2201",
+		"source" : "modules/max2201"
 	},
 	"sourceGroups" : 
 	[
@@ -139,13 +143,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "modules/rfm95w/src/rfm95w.c",
+			"path" : "modules/max2201/src/max2201.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "modules/rfm95w/src/rfm95w_hal_wrapper.c",
+			"path" : "modules/max2201/src/max2201_hal_wrapper.c",
 			"sourceGroupIndex" : 0
 		}
 	],

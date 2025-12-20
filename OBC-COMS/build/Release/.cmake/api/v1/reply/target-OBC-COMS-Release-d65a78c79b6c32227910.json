@@ -109,7 +109,15 @@
 				},
 				{
 					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src"
+				},
+				{
+					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/src"
 				},
 				{
 					"backtrace" : 4,
@@ -117,7 +125,15 @@
 				},
 				{
 					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/src"
+				},
+				{
+					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/src"
 				}
 			],
 			"language" : "C",
@@ -199,7 +215,15 @@
 				},
 				{
 					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src"
+				},
+				{
+					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/src"
 				},
 				{
 					"backtrace" : 4,
@@ -207,7 +231,15 @@
 				},
 				{
 					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/src"
+				},
+				{
+					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/src"
 				}
 			],
 			"language" : "ASM",

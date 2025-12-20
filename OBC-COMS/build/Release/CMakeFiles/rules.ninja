@@ -144,6 +144,15 @@ rule RERUN_CMAKE
 
 
 #############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe -P C:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS\build\Release\CMakeFiles\VerifyGlobs.cmake
+  description = Re-checking globbed directories...
+  generator = 1
+
+
+#############################################
 # Rule for cleaning additional files.
 
 rule CLEAN_ADDITIONAL

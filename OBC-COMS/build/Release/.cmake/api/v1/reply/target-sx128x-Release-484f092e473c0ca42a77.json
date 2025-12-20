@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "modules/max2201/libmax2201_Lib.a"
+			"path" : "modules/sx1280/libsx128x.a"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"modules/max2201/CMakeLists.txt"
+			"modules/sx1280/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,19 +27,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -72,7 +72,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc"
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src"
 				},
 				{
 					"backtrace" : 2,
@@ -111,17 +115,19 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
-	"id" : "max2201_Lib::@21b4995696229adab4d2",
-	"name" : "max2201_Lib",
-	"nameOnDisk" : "libmax2201_Lib.a",
+	"id" : "sx128x::@ae689df6c50dc73a7b49",
+	"name" : "sx128x",
+	"nameOnDisk" : "libsx128x.a",
 	"paths" : 
 	{
-		"build" : "modules/max2201",
-		"source" : "modules/max2201"
+		"build" : "modules/sx1280",
+		"source" : "modules/sx1280"
 	},
 	"sourceGroups" : 
 	[
@@ -130,7 +136,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -139,13 +147,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "modules/max2201/src/max2201.c",
+			"path" : "modules/sx1280/src/sx1280-hal.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "modules/max2201/src/max2201_hal_wrapper.c",
+			"path" : "modules/sx1280/src/sx1280-radio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "modules/sx1280/src/sx1280.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "modules/sx1280/src/sx1280_hal_wrapper.c",
 			"sourceGroupIndex" : 0
 		}
 	],

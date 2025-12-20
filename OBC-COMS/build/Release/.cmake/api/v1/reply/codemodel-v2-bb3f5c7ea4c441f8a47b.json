@@ -132,7 +132,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OBC-COMS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OBC-COMS-Release-1a4c9330bd2f16052bf7.json",
+					"jsonFile" : "target-OBC-COMS-Release-d65a78c79b6c32227910.json",
 					"name" : "OBC-COMS",
 					"projectIndex" : 0
 				},
@@ -146,28 +146,28 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "max2201_Lib::@21b4995696229adab4d2",
-					"jsonFile" : "target-max2201_Lib-Release-1b6a2da98d4b4f199531.json",
+					"jsonFile" : "target-max2201_Lib-Release-0659c4576be858473d92.json",
 					"name" : "max2201_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "rfm95w_Lib::@e7d4ff35c4c6f3d369a5",
-					"jsonFile" : "target-rfm95w_Lib-Release-9d4540d52954dcd5b063.json",
+					"jsonFile" : "target-rfm95w_Lib-Release-67de1cbbffc6bcfcd3ef.json",
 					"name" : "rfm95w_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "sd_card_Lib::@5ce835182d7479cf356d",
-					"jsonFile" : "target-sd_card_Lib-Release-37bfa934282c16aa1607.json",
+					"jsonFile" : "target-sd_card_Lib-Release-5998e7f764a24425437c.json",
 					"name" : "sd_card_Lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "sx128x::@ae689df6c50dc73a7b49",
-					"jsonFile" : "target-sx128x-Release-c5ecc96a5acf37d7cbe5.json",
+					"jsonFile" : "target-sx128x-Release-484f092e473c0ca42a77.json",
 					"name" : "sx128x",
 					"projectIndex" : 0
 				}

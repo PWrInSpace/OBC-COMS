@@ -27,19 +27,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 5,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -73,6 +73,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/src"
 				},
 				{
 					"backtrace" : 2,
