@@ -154,6 +154,9 @@
 		},
 		{
 			"path" : "modules/max2201/CMakeLists.txt"
+		},
+		{
+			"path" : "modules/sd_card/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

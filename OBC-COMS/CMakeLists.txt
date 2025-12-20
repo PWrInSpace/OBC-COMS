@@ -36,9 +36,10 @@ add_executable(${CMAKE_PROJECT_NAME})
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
-add_subdirectory(Modules/SX1280)
+add_subdirectory(modules/sx1280)
 add_subdirectory(Modules/rfm95w)
 add_subdirectory(Modules/max2201)
+add_subdirectory(Modules/sd_card)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
@@ -70,8 +71,10 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 # REMOVE the 'PRIVATE' keyword here to match ST's generated files
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-    SX1280_Lib 
+    sx128x 
     rfm95w_Lib 
     max2201_Lib
+    sd_card_Lib
 )
+
 

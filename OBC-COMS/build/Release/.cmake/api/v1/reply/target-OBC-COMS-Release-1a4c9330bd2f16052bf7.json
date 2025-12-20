@@ -42,7 +42,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -114,6 +114,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc"
 				}
 			],
 			"language" : "C",
@@ -200,6 +204,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc"
 				}
 			],
 			"language" : "ASM",
@@ -217,7 +225,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"id" : "SX1280_Lib::@ae689df6c50dc73a7b49"
+			"id" : "sx128x::@ae689df6c50dc73a7b49"
 		},
 		{
 			"backtrace" : 4,
@@ -226,6 +234,10 @@
 		{
 			"backtrace" : 4,
 			"id" : "max2201_Lib::@21b4995696229adab4d2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "sd_card_Lib::@5ce835182d7479cf356d"
 		}
 	],
 	"id" : "OBC-COMS::@6890427a1f51a3e7e1df",
@@ -248,7 +260,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "modules\\sx1280\\libSX1280_Lib.a",
+				"fragment" : "modules\\sx1280\\libsx128x.a",
 				"role" : "libraries"
 			},
 			{
@@ -259,6 +271,11 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "modules\\max2201\\libmax2201_Lib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "modules\\sd_card\\libsd_card_Lib.a",
 				"role" : "libraries"
 			}
 		],

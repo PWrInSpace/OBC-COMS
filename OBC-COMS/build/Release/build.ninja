@@ -47,13 +47,13 @@ cmake_ninja_workdir = C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Rele
 #############################################
 # Order-only phony target for OBC-COMS
 
-build cmake_object_order_depends_target_OBC-COMS: phony || cmake_object_order_depends_target_STM32_Drivers cmake_object_order_depends_target_SX1280_Lib cmake_object_order_depends_target_max2201_Lib cmake_object_order_depends_target_rfm95w_Lib
+build cmake_object_order_depends_target_OBC-COMS: phony || cmake_object_order_depends_target_STM32_Drivers cmake_object_order_depends_target_max2201_Lib cmake_object_order_depends_target_rfm95w_Lib cmake_object_order_depends_target_sd_card_Lib cmake_object_order_depends_target_sx128x
 
 build CMakeFiles/OBC-COMS.dir/Core/Src/main.c.obj: C_COMPILER__OBC-COMS_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/Core/Src/main.c || cmake_object_order_depends_target_OBC-COMS
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -61,7 +61,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/gpio.c.obj: C_COMPILER__OBC-COMS_unscanne
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\gpio.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -69,7 +69,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/fdcan.c.obj: C_COMPILER__OBC-COMS_unscann
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\fdcan.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -77,7 +77,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/gpdma.c.obj: C_COMPILER__OBC-COMS_unscann
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\gpdma.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -85,7 +85,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/icache.c.obj: C_COMPILER__OBC-COMS_unscan
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\icache.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -93,7 +93,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/spi.c.obj: C_COMPILER__OBC-COMS_unscanned
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\spi.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -101,7 +101,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/usart.c.obj: C_COMPILER__OBC-COMS_unscann
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\usart.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -109,7 +109,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_it.c.obj: C_COMPILER__OBC-COMS_
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\stm32h5xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -117,7 +117,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_msp.c.obj: C_COMPILER__OBC-
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\stm32h5xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -125,7 +125,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_timebase_tim.c.obj: C_COMPI
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\stm32h5xx_hal_timebase_tim.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -133,7 +133,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/sysmem.c.obj: C_COMPILER__OBC-COMS_unscan
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -141,7 +141,7 @@ build CMakeFiles/OBC-COMS.dir/Core/Src/syscalls.c.obj: C_COMPILER__OBC-COMS_unsc
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir\Core\Src
 
@@ -149,7 +149,7 @@ build CMakeFiles/OBC-COMS.dir/startup_stm32h563xx.s.obj: ASM_COMPILER__OBC-COMS_
   DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = CMakeFiles\OBC-COMS.dir\startup_stm32h563xx.s.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -O3 -DNDEBUG
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   OBJECT_FILE_DIR = CMakeFiles\OBC-COMS.dir
 
@@ -161,10 +161,10 @@ build CMakeFiles/OBC-COMS.dir/startup_stm32h563xx.s.obj: ASM_COMPILER__OBC-COMS_
 #############################################
 # Link the executable OBC-COMS.elf
 
-build OBC-COMS.elf: C_EXECUTABLE_LINKER__OBC-COMS_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/main.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/gpio.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/fdcan.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/gpdma.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/icache.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/spi.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/usart.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_it.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_msp.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_timebase_tim.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/sysmem.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/syscalls.c.obj CMakeFiles/OBC-COMS.dir/startup_stm32h563xx.s.obj | modules/sx1280/libSX1280_Lib.a modules/rfm95w/librfm95w_Lib.a modules/max2201/libmax2201_Lib.a || cmake/stm32cubemx/STM32_Drivers modules/max2201/libmax2201_Lib.a modules/rfm95w/librfm95w_Lib.a modules/sx1280/libSX1280_Lib.a
+build OBC-COMS.elf: C_EXECUTABLE_LINKER__OBC-COMS_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_usart_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/main.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/gpio.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/fdcan.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/gpdma.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/icache.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/spi.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/usart.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_it.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_msp.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/stm32h5xx_hal_timebase_tim.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/sysmem.c.obj CMakeFiles/OBC-COMS.dir/Core/Src/syscalls.c.obj CMakeFiles/OBC-COMS.dir/startup_stm32h563xx.s.obj | modules/sx1280/libsx128x.a modules/rfm95w/librfm95w_Lib.a modules/max2201/libmax2201_Lib.a modules/sd_card/libsd_card_Lib.a || cmake/stm32cubemx/STM32_Drivers modules/max2201/libmax2201_Lib.a modules/rfm95w/librfm95w_Lib.a modules/sd_card/libsd_card_Lib.a modules/sx1280/libsx128x.a
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0
   LINK_FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -T "C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/STM32H563xx_FLASH.ld" --specs=nano.specs -Wl,-Map=OBC-COMS.map -Wl,--gc-sections -Wl,--print-memory-usage
-  LINK_LIBRARIES = -lm  modules/sx1280/libSX1280_Lib.a  modules/rfm95w/librfm95w_Lib.a  modules/max2201/libmax2201_Lib.a
+  LINK_LIBRARIES = -lm  modules/sx1280/libsx128x.a  modules/rfm95w/librfm95w_Lib.a  modules/max2201/libmax2201_Lib.a  modules/sd_card/libsd_card_Lib.a
   OBJECT_DIR = CMakeFiles\OBC-COMS.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -438,43 +438,53 @@ build cmake/stm32cubemx/rebuild_cache: phony cmake/stm32cubemx/CMakeFiles/rebuil
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target SX1280_Lib
+# Object build statements for STATIC_LIBRARY target sx128x
 
 
 #############################################
-# Order-only phony target for SX1280_Lib
+# Order-only phony target for sx128x
 
-build cmake_object_order_depends_target_SX1280_Lib: phony || modules/sx1280/CMakeFiles/SX1280_Lib.dir
+build cmake_object_order_depends_target_sx128x: phony || modules/sx1280/CMakeFiles/sx128x.dir
 
-build modules/sx1280/CMakeFiles/SX1280_Lib.dir/src/sx1280.c.obj: C_COMPILER__SX1280_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src/sx1280.c || cmake_object_order_depends_target_SX1280_Lib
-  DEP_FILE = modules\sx1280\CMakeFiles\SX1280_Lib.dir\src\sx1280.c.obj.d
+build modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280.c.obj: C_COMPILER__sx128x_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src/sx1280.c || cmake_object_order_depends_target_sx128x
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
+  DEP_FILE = modules\sx1280\CMakeFiles\sx128x.dir\src\sx1280.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc
-  OBJECT_DIR = modules\sx1280\CMakeFiles\SX1280_Lib.dir
-  OBJECT_FILE_DIR = modules\sx1280\CMakeFiles\SX1280_Lib.dir\src
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = modules\sx1280\CMakeFiles\sx128x.dir
+  OBJECT_FILE_DIR = modules\sx1280\CMakeFiles\sx128x.dir\src
 
-build modules/sx1280/CMakeFiles/SX1280_Lib.dir/src/sx1280_hal_wrapper.c.obj: C_COMPILER__SX1280_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src/sx1280_hal_wrapper.c || cmake_object_order_depends_target_SX1280_Lib
-  DEP_FILE = modules\sx1280\CMakeFiles\SX1280_Lib.dir\src\sx1280_hal_wrapper.c.obj.d
+build modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280-hal.c.obj: C_COMPILER__sx128x_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src/sx1280-hal.c || cmake_object_order_depends_target_sx128x
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
+  DEP_FILE = modules\sx1280\CMakeFiles\sx128x.dir\src\sx1280-hal.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc
-  OBJECT_DIR = modules\sx1280\CMakeFiles\SX1280_Lib.dir
-  OBJECT_FILE_DIR = modules\sx1280\CMakeFiles\SX1280_Lib.dir\src
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = modules\sx1280\CMakeFiles\sx128x.dir
+  OBJECT_FILE_DIR = modules\sx1280\CMakeFiles\sx128x.dir\src
+
+build modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280-radio.c.obj: C_COMPILER__sx128x_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/src/sx1280-radio.c || cmake_object_order_depends_target_sx128x
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
+  DEP_FILE = modules\sx1280\CMakeFiles\sx128x.dir\src\sx1280-radio.c.obj.d
+  FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = modules\sx1280\CMakeFiles\sx128x.dir
+  OBJECT_FILE_DIR = modules\sx1280\CMakeFiles\sx128x.dir\src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target SX1280_Lib
+# Link build statements for STATIC_LIBRARY target sx128x
 
 
 #############################################
-# Link the static library modules\sx1280\libSX1280_Lib.a
+# Link the static library modules\sx1280\libsx128x.a
 
-build modules/sx1280/libSX1280_Lib.a: C_STATIC_LIBRARY_LINKER__SX1280_Lib_Release modules/sx1280/CMakeFiles/SX1280_Lib.dir/src/sx1280.c.obj modules/sx1280/CMakeFiles/SX1280_Lib.dir/src/sx1280_hal_wrapper.c.obj
+build modules/sx1280/libsx128x.a: C_STATIC_LIBRARY_LINKER__sx128x_Release modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280.c.obj modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280-hal.c.obj modules/sx1280/CMakeFiles/sx128x.dir/src/sx1280-radio.c.obj
   LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0
-  OBJECT_DIR = modules\sx1280\CMakeFiles\SX1280_Lib.dir
+  OBJECT_DIR = modules\sx1280\CMakeFiles\sx128x.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = modules\sx1280\libSX1280_Lib.a
-  TARGET_PDB = SX1280_Lib.a.dbg
+  TARGET_FILE = modules\sx1280\libsx128x.a
+  TARGET_PDB = sx128x.a.dbg
 
 
 #############################################
@@ -515,16 +525,18 @@ build modules/sx1280/rebuild_cache: phony modules/sx1280/CMakeFiles/rebuild_cach
 build cmake_object_order_depends_target_rfm95w_Lib: phony || modules/rfm95w/CMakeFiles/rfm95w_Lib.dir
 
 build modules/rfm95w/CMakeFiles/rfm95w_Lib.dir/src/rfm95w.c.obj: C_COMPILER__rfm95w_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/src/rfm95w.c || cmake_object_order_depends_target_rfm95w_Lib
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir\src\rfm95w.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir
   OBJECT_FILE_DIR = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir\src
 
 build modules/rfm95w/CMakeFiles/rfm95w_Lib.dir/src/rfm95w_hal_wrapper.c.obj: C_COMPILER__rfm95w_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/src/rfm95w_hal_wrapper.c || cmake_object_order_depends_target_rfm95w_Lib
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir\src\rfm95w_hal_wrapper.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir
   OBJECT_FILE_DIR = modules\rfm95w\CMakeFiles\rfm95w_Lib.dir\src
 
@@ -583,16 +595,18 @@ build modules/rfm95w/rebuild_cache: phony modules/rfm95w/CMakeFiles/rebuild_cach
 build cmake_object_order_depends_target_max2201_Lib: phony || modules/max2201/CMakeFiles/max2201_Lib.dir
 
 build modules/max2201/CMakeFiles/max2201_Lib.dir/src/max2201.c.obj: C_COMPILER__max2201_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/src/max2201.c || cmake_object_order_depends_target_max2201_Lib
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = modules\max2201\CMakeFiles\max2201_Lib.dir\src\max2201.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = modules\max2201\CMakeFiles\max2201_Lib.dir
   OBJECT_FILE_DIR = modules\max2201\CMakeFiles\max2201_Lib.dir\src
 
 build modules/max2201/CMakeFiles/max2201_Lib.dir/src/max2201_hal_wrapper.c.obj: C_COMPILER__max2201_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/src/max2201_hal_wrapper.c || cmake_object_order_depends_target_max2201_Lib
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
   DEP_FILE = modules\max2201\CMakeFiles\max2201_Lib.dir\src\max2201_hal_wrapper.c.obj.d
   FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = modules\max2201\CMakeFiles\max2201_Lib.dir
   OBJECT_FILE_DIR = modules\max2201\CMakeFiles\max2201_Lib.dir\src
 
@@ -637,23 +651,89 @@ build modules/max2201/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build modules/max2201/rebuild_cache: phony modules/max2201/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target sd_card_Lib
+
+
+#############################################
+# Order-only phony target for sd_card_Lib
+
+build cmake_object_order_depends_target_sd_card_Lib: phony || modules/sd_card/CMakeFiles/sd_card_Lib.dir
+
+build modules/sd_card/CMakeFiles/sd_card_Lib.dir/src/sd_card.c.obj: C_COMPILER__sd_card_Lib_unscanned_Release C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/src/sd_card.c || cmake_object_order_depends_target_sd_card_Lib
+  DEFINES = -DSTM32H563xx -DUSE_HAL_DRIVER -DUSE_NUCLEO_144
+  DEP_FILE = modules\sd_card\CMakeFiles\sd_card_Lib.dir\src\sd_card.c.obj.d
+  FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/STM32H5xx_HAL_Driver/Inc/Legacy -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/BSP/STM32H5xx_Nucleo -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include -IC:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = modules\sd_card\CMakeFiles\sd_card_Lib.dir
+  OBJECT_FILE_DIR = modules\sd_card\CMakeFiles\sd_card_Lib.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target sd_card_Lib
+
+
+#############################################
+# Link the static library modules\sd_card\libsd_card_Lib.a
+
+build modules/sd_card/libsd_card_Lib.a: C_STATIC_LIBRARY_LINKER__sd_card_Lib_Release modules/sd_card/CMakeFiles/sd_card_Lib.dir/src/sd_card.c.obj
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = modules\sd_card\CMakeFiles\sd_card_Lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = modules\sd_card\libsd_card_Lib.a
+  TARGET_PDB = sd_card_Lib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build modules/sd_card/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS\build\Release\modules\sd_card && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -SC:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS -BC:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS\build\Release"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build modules/sd_card/edit_cache: phony modules/sd_card/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build modules/sd_card/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS\build\Release\modules\sd_card && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS -BC:\Users\Mateo\Desktop\stm32\OBC-COMS\OBC-COMS\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build modules/sd_card/rebuild_cache: phony modules/sd_card/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build OBC-COMS: phony OBC-COMS.elf
 
 build STM32_Drivers: phony cmake/stm32cubemx/STM32_Drivers
 
-build SX1280_Lib: phony modules/sx1280/libSX1280_Lib.a
-
-build libSX1280_Lib.a: phony modules/sx1280/libSX1280_Lib.a
-
 build libmax2201_Lib.a: phony modules/max2201/libmax2201_Lib.a
 
 build librfm95w_Lib.a: phony modules/rfm95w/librfm95w_Lib.a
 
+build libsd_card_Lib.a: phony modules/sd_card/libsd_card_Lib.a
+
+build libsx128x.a: phony modules/sx1280/libsx128x.a
+
 build max2201_Lib: phony modules/max2201/libmax2201_Lib.a
 
 build rfm95w_Lib: phony modules/rfm95w/librfm95w_Lib.a
+
+build sd_card_Lib: phony modules/sd_card/libsd_card_Lib.a
+
+build sx128x: phony modules/sx1280/libsx128x.a
 
 # =============================================================================
 # Folder targets.
@@ -663,7 +743,7 @@ build rfm95w_Lib: phony modules/rfm95w/librfm95w_Lib.a
 #############################################
 # Folder: C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release
 
-build all: phony OBC-COMS.elf cmake/stm32cubemx/all modules/sx1280/all modules/rfm95w/all modules/max2201/all
+build all: phony OBC-COMS.elf cmake/stm32cubemx/all modules/sx1280/all modules/rfm95w/all modules/max2201/all modules/sd_card/all
 
 # =============================================================================
 
@@ -689,9 +769,16 @@ build modules/rfm95w/all: phony modules/rfm95w/librfm95w_Lib.a
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/modules/sd_card
+
+build modules/sd_card/all: phony modules/sd_card/libsd_card_Lib.a
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/build/Release/modules/sx1280
 
-build modules/sx1280/all: phony modules/sx1280/libSX1280_Lib.a
+build modules/sx1280/all: phony modules/sx1280/libsx128x.a
 
 # =============================================================================
 # Built-in targets
@@ -700,14 +787,14 @@ build modules/sx1280/all: phony modules/sx1280/libSX1280_Lib.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/gcc-arm-none-eabi.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/gcc-arm-none-eabi.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/gcc-arm-none-eabi.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/gcc-arm-none-eabi.cmake C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/max2201/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/rfm95w/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sd_card/CMakeLists.txt C$:/Users/Mateo/Desktop/stm32/OBC-COMS/OBC-COMS/modules/sx1280/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################
