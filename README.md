@@ -1,4 +1,4 @@
-# 🛰️ OBC-COMMS | Satellite Communication Subsystem
+# 🛰️ OBC-COMMS | Rocket Communication System
 
 [![Firmware - STM32H5](https://img.shields.io/badge/Firmware-STM32H5-blue?logo=stmicroelectronics)](https://www.st.com/en/microcontrollers-microprocessors/stm32h5-series.html)
 [![Protocol - LoRa](https://img.shields.io/badge/Protocol-LoRa-green)](https://www.semtech.com/products/wireless-rf/lora-core/sx1280)
