@@ -33,7 +33,9 @@ extern "C" {
 #define SX1280_DEBUG                                0
 
 typedef int32_t SpiWrite( void* ctx, uint8_t *prefix, uint16_t prefix_len, uint8_t* out, uint16_t out_len );
+typedef int32_t SpiWriteDMA( void* ctx, uint8_t *prefix, uint16_t prefix_len, uint8_t* out, uint16_t out_len );
 typedef int32_t SpiRead( void* ctx, uint8_t *prefix, uint16_t prefix_len, uint8_t* in, uint16_t in_len );
+typedef int32_t SpiReadDMA( void* ctx, uint8_t *prefix, uint16_t prefix_len, uint8_t* in, uint16_t in_len );
 
 typedef int32_t PinSet( void* ctx, bool value );
 typedef int32_t PinGet( void* ctx );
@@ -49,7 +51,9 @@ struct SX1280_s {
     void* ctx;
 
     SpiRead     *spi_read;
+    SpiReadDMA     *spi_read_dma;
     SpiWrite    *spi_write;
+    SpiWriteDMA    *spi_write_dma;
     PinSet      *set_reset;
     PinGet      *get_busy;
 

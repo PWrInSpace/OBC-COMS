@@ -5,7 +5,6 @@ SX1280_t sx1280_radio;
 void Radio_Setup(void) {
 
     SX1280Init(&sx1280_radio,NULL);
-
     SX1280HalReset(&sx1280_radio);
     SX1280SetPacketType(&sx1280_radio, PACKET_TYPE_LORA);
     SX1280SetRfFrequency(&sx1280_radio, 2400000000);
