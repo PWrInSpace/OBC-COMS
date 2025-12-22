@@ -28,7 +28,8 @@ RadioPacket_t rxBufferPool[POOL_SIZE];
 RadioPacket_t txBufferPool[POOL_SIZE];
 
 osMessageQueueId_t rxFreeQueue;
-osMessageQueueId_t rxTakenQueue;
+osMessageQueueId_t rxUartQueue;
+osMessageQueueId_t rxSDQueue;
 osMessageQueueId_t txFreeQueue;
 osMessageQueueId_t txTakenQueue;
 
@@ -70,7 +71,11 @@ void sx1280_transciever_task(void *pvParameters) {
                     pRxPacket->rssi = pktStatus.Params.LoRa.RssiPkt;
                     pRxPacket->snr  = pktStatus.Params.LoRa.SnrPkt;
 
-                    osMessageQueuePut(rxTakenQueue, &pRxPacket, 0, 0);
+                    while(uxSemaphoreGetCount(pRxPacket->xRefCounter) > 0) {
+                    xSemaphoreTake(pRxPacket->xRefCounter, 0);
+        }
+                    osMessageQueuePut(rxUartQueue, &pRxPacket, 0, 0);
+                    osMessageQueuePut(rxSDQueue, &pRxPacket, 0, 0);
                 }
                 SX1280ClearIrqStatus(&sx1280_radio, IRQ_RADIO_ALL);
                 SX1280SetRx(&sx1280_radio, (TickTime_t){RADIO_TICK_SIZE_1000_US, 0xFFFF});
@@ -92,19 +97,22 @@ void sx1280_transciever_task(void *pvParameters) {
     }
 }
 
+
 bool sx1280_task_start(void) {
 
     rxFreeQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
-    rxTakenQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
+    rxUartQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
+    rxSDQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
 
     txFreeQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
     txTakenQueue = osMessageQueueNew(POOL_SIZE, sizeof(RadioPacket_t*), NULL);
 
-    if (!rxFreeQueue || !rxTakenQueue || !txFreeQueue || !txTakenQueue) return false;
+    if (!rxFreeQueue || !rxUartQueue || !rxSDQueue || !txFreeQueue || !txTakenQueue) return false;
 
     for(int i = 0; i < POOL_SIZE; i++) {
         RadioPacket_t* pRx = &rxBufferPool[i];
         RadioPacket_t* pTx = &txBufferPool[i];
+        pRx->xRefCounter = xSemaphoreCreateCounting(2, 0); 
         osMessageQueuePut(rxFreeQueue, &pRx, 0, 0);
         osMessageQueuePut(txFreeQueue, &pTx, 0, 0);
     }
